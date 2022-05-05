@@ -31,13 +31,15 @@
 // //Template String
 // console.log(`my name is ${name} and i am ${age}`)
 
-//more on strings methods
-const s = 'hello world'
-//number of letters
-console.log(s.length);
-console.log(s.toUpperCase);
-console.log(s.toLocaleLowerCase);
-//pulling out a particular text start and stop
-console.log(s.substring(0, 5).toUpperCase());
-//spliting a string to an array with anything you want to split by inside the box('')(',')
-console.log(s.split(''));
+// //more on strings methods
+// const s = 'hello world'
+// //number of letters
+// console.log(s.length);
+// console.log(s.toUpperCase);
+// console.log(s.toLocaleLowerCase);
+// //pulling out a particular text start and stop
+// console.log(s.substring(0, 5).toUpperCase());
+// //spliting a string to an array with anything you want to split by inside the box('')(',')
+// console.log(s.split(''));
+
+//Arrays - variables that hold multiple values
