@@ -14,12 +14,19 @@
 
 //DataTypes
 //Strings, Numbers, Boolean, Null, Underfine
-const name = "john";
-const age = 30;
-const rating = 4.5;
-const isCool = true;
-const x = null;
-const y = undefined;
-let z;
+// const name = "john";
+// const age = 30;
+// const rating = 4.5;
+// const isCool = true;
+// const x = null;
+// const y = undefined;
+// let z;
+// console.log(typeof z);
 
-console.log(typeof z);
+// working with strings
+const name = 'john';
+const age = 30;
+//concatination
+console.log('my name is ' + name + ' and i am ' + age)
+//Template String
+console.log(`my name is ${name} and i am ${age}`)
