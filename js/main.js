@@ -164,46 +164,49 @@
 //   console.log(todo.text)
 // }
 
-//high order array method take in as a parameter a function best of all
-//forEach, Map, Filter
-//forEach - which just loops through them
-//map- will allow us to create a new array from an array
-//filter- which will allow us create a new array based on a condition
+// high order array method take in as a parameter a function best of all
+// forEach, Map, Filter
+// forEach - which just loops through them
+// map- will allow us to create a new array from an array
+// filter- which will allow us create a new array based on a condition
 
-const todos = [
-  {
-    id: 1,
-    text: "Take out trash",
-    isCompleted: true
-  },
-  {
-    id: 2,
-    text: "How is your day",
-    isCompleted: false
-  },
-  {
-    id: 3,
-    text: "Good bye for now",
-    isCompleted: true
-  }
-]
-//forEach
-todos.forEach(function(todo){
-  console.log(todo.id);
-});
+// const todos = [
+//   {
+//     id: 1,
+//     text: "Take out trash",
+//     isCompleted: true
+//   },
+//   {
+//     id: 2,
+//     text: "How is your day",
+//     isCompleted: false
+//   },
+//   {
+//     id: 3,
+//     text: "Good bye for now",
+//     isCompleted: true
+//   }
+// ]
+// //forEach
+// todos.forEach(function(todo){
+//   console.log(todo.id);
+// });
 
-//map
-const todoText = todos.map(function(todo){
-  return todo.text
-});
-console.log(todoText);
+// //map
+// const todoText = todos.map(function(todo){
+//   return todo.text
+// });
+// console.log(todoText);
 
-//Filter returns all the true and remove the fasle
-//you can chain on other methods like addinf map to filter
-const todoIsCom = todos.filter(function(todo){
-  return todo.isCompleted === true;
-}).map(function(todo){
-  // it only returns the ones that are true(completed)
-  return todo.text;
-})
-console.log(todoIsCom);
+// //Filter returns all the true and remove the fasle
+// //you can chain on other methods like addinf map to filter
+// const todoIsCom = todos.filter(function(todo){
+//   return todo.isCompleted === true;
+// }).map(function(todo){
+//   // it only returns the ones that are true(completed)
+//   return todo.text;
+// })
+// console.log(todoIsCom);
+
+
+//Conditional 
