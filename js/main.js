@@ -93,3 +93,30 @@ console.log(firstName, city);
 //you can also add peroperties to your object
 person.email = 'rapoo@gmail.com';
 console.log(person);
+
+//array of objects
+const todos = [
+  {
+    id: 1,
+    text: "Take out trash",
+    isCompleted: true
+  },
+  {
+    id: 2,
+    text: "How is your day",
+    isCompleted: false
+  },
+  {
+    id: 3,
+    text: "Good bye for now",
+    isCompleted: true
+  }
+]
+console.log(todos);
+//getting the text in the array of object
+console.log(todos[1].text);
+//Json is a data format and used for full stack dev for api and sending data to a server. useally sent and recived in json
+
+//converting object to json format
+const todoJson = JSON.stringify(todos)
+console.log(todoJson);
