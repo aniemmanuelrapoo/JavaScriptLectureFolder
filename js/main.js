@@ -42,27 +42,54 @@
 // //spliting a string to an array with anything you want to split by inside the box('')(',')
 // console.log(s.split(''));
 
-//Arrays - variables that hold multiple values
-// you can have mutiple datatypes in the arrays and arrays are zero based
-//old way to create array
-const numbers = new Array(1,2,3,4,5);
-console.log(numbers);
-//new and best way
-const fruites = ['apples', 'oranges', 'pears', 10, true];
-//getting all arrays elemets
-console.log(fruites);
-//getting one of them
-console.log(fruites[1]);
-//addding to the end of array with push
-fruites.push('mangos')
-//adding to the beginning we use unshift
-fruites.unshift('grapes');
-//taking the last one off array is pop
-fruites.pop()
-//taking the first one off is shift
-fruites.shift()
-//check id something is in array
-console.log(Array.isArray(fruites));
-//getting index of a certin value in array is indexOf
-console.log(fruites.indexOf('oranges'));
-console.log(fruites);
+// //Arrays - variables that hold multiple values
+// // you can have mutiple datatypes in the arrays and arrays are zero based
+// //old way to create array
+// const numbers = new Array(1,2,3,4,5);
+// console.log(numbers);
+// //new and best way
+// const fruites = ['apples', 'oranges', 'pears', 10, true];
+// //getting all arrays elemets
+// console.log(fruites);
+// //getting one of them
+// console.log(fruites[1]);
+// //addding to the end of array with push
+// fruites.push('mangos')
+// //adding to the beginning we use unshift
+// fruites.unshift('grapes');
+// //taking the last one off array is pop
+// fruites.pop()
+// //taking the first one off is shift
+// fruites.shift()
+// //check id something is in array
+// console.log(Array.isArray(fruites));
+// //getting index of a certin value in array is indexOf
+// console.log(fruites.indexOf('oranges'));
+// console.log(fruites);
+
+//Object Literals - key value pairs
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 30,
+  hobbies: ['music', 'movies', 'sports'],
+  address: {
+    street: '50 Main str',
+    city: 'Jalingo',
+    state: 'Taraba'
+  }
+}
+
+console.log(person);
+//to access a single object we use the dot syntax
+console.log(person.firstName, person.lastName);
+console.log(person.hobbies[1]);
+console.log(person.address.city);
+
+//destructuring.. pulling out from object to use as variables
+const { firstName, lastName, address: {city} } = person
+console.log(firstName, city);
+
+//you can also add peroperties to your object
+person.email = 'rapoo@gmail.com';
+console.log(person);
