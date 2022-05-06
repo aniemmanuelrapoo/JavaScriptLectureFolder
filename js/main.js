@@ -266,14 +266,17 @@ function Person(firstname, lastname, dob){
   this.firstname = firstname;
   this.lastname = lastname;
   this.dob = new Date(dob);
-  //methods
-  this.getBirthYear = function(){
-    return this.dob.getFullYear()
-  }
+  //methods not advised to be added here buh to prototype
   this.getFullName = function(){
     return `${this.firstname} ${this.lastname}`
   }
 }
+
+//adding methods to prototype(best way)
+Person.prototype.getBirthYear = function(){
+  return this.dob.getFullYear()
+}
+
 //instantiate object
 const person1 = new Person('John', 'Doe', '4-3-1999')
 const person2 = new Person('Mary', 'jOHN', '4-3-1999')
