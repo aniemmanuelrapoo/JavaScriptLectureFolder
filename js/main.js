@@ -121,45 +121,56 @@
 // const todoJson = JSON.stringify(todos)
 // console.log(todoJson);
 
-// Loops
-const todos = [
-  {
-    id: 1,
-    text: "Take out trash",
-    isCompleted: true
-  },
-  {
-    id: 2,
-    text: "How is your day",
-    isCompleted: false
-  },
-  {
-    id: 3,
-    text: "Good bye for now",
-    isCompleted: true
-  }
-]
-//for loops
-//first param is the assignment of the variables,, next is the condtion that needs to be met,, last is the increment adds 1 to i variable
-//what ever we put inside will run until the condition is true
-for(let i = 0; i <= 10; i++){
-  console.log(`for loop number: ${i}`);
-}
+// // Loops
+// const todos = [
+//   {
+//     id: 1,
+//     text: "Take out trash",
+//     isCompleted: true
+//   },
+//   {
+//     id: 2,
+//     text: "How is your day",
+//     isCompleted: false
+//   },
+//   {
+//     id: 3,
+//     text: "Good bye for now",
+//     isCompleted: true
+//   }
+// ]
+// //for loops
+// //first param is the assignment of the variables,, next is the condtion that needs to be met,, last is the increment adds 1 to i variable
+// //what ever we put inside will run until the condition is true
+// for(let i = 0; i <= 10; i++){
+//   console.log(`for loop number: ${i}`);
+// }
 
-//while loops
-//old school and the diff is that we set the variables outside the loop
-// always increment the i if not the loop will be a never ending loop becus the condition will not be met
-let i = 0;
-while(i < 10){
-  console.log(`while loop number: ${i}`)
-  i++;
-};
+// //while loops
+// //old school and the diff is that we set the variables outside the loop
+// // always increment the i if not the loop will be a never ending loop becus the condition will not be met
+// let i = 0;
+// while(i < 10){
+//   console.log(`while loop number: ${i}`)
+//   i++;
+// };
 
-//Looping through an array
-for(let i = 0; i < todos.length; i++){
-  console.log(todos[i].text);
-}
-// another way is for of loop
-for(let todo of todos){
-  console.log(todo.text)
-}
+// //Looping through an array
+// for(let i = 0; i < todos.length; i++){
+//   console.log(todos[i].text);
+// }
+// // another way is for of loop
+// for(let todo of todos){
+//   console.log(todo.text)
+// }
+
+//high order array method take in as a parameter a function best of all
+//forEach, Map, Filter
+//forEach - which just loops through them
+//map- will allow us to create a new array from an array
+//filter- which will allow us create a new array based on a condition
+
+//forEach
+todos.forEach(function(todo){
+  console.log(todo.id);
+});
