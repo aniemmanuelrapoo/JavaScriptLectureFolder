@@ -122,17 +122,23 @@
 // console.log(todoJson);
 
 // Loops
-const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 30,
-  hobbies: ['music', 'movies', 'sports'],
-  address: {
-    street: '50 Main str',
-    city: 'Jalingo',
-    state: 'Taraba'
+const todos = [
+  {
+    id: 1,
+    text: "Take out trash",
+    isCompleted: true
+  },
+  {
+    id: 2,
+    text: "How is your day",
+    isCompleted: false
+  },
+  {
+    id: 3,
+    text: "Good bye for now",
+    isCompleted: true
   }
-}
+]
 //for loops
 //first param is the assignment of the variables,, next is the condtion that needs to be met,, last is the increment adds 1 to i variable
 //what ever we put inside will run until the condition is true
@@ -148,3 +154,8 @@ while(i < 10){
   console.log(`while loop number: ${i}`)
   i++;
 };
+
+//Looping through and array
+for(let i = 0; i < todos.length; i++){
+  console.log(`for loop number: ${i}`);
+}
