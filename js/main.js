@@ -209,4 +209,22 @@
 // console.log(todoIsCom);
 
 
-//Conditional 
+//Conditional
+const x = 6;
+const y = 11;
+
+if(x === 10){
+  console.log(`x is 10`);
+}else if(x > 10){
+  console.log(`x is greater than 10`);
+}else{
+  console.log(`x less than 10`);
+}
+//OR means one of then must be true
+if(x > 5 || y > 10){
+  console.log(`x is more than 5 or y more than 10`);
+}
+//AND means two or all of then must be true
+if(x > 5 && y > 10){
+  console.log(`x is more than 5 or y more than 10`);
+}
