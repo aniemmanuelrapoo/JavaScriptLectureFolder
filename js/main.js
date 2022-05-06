@@ -259,24 +259,49 @@
 // }
 // console.log(AddNum(5,5));
 
-//Object oriented programming
-// two ways to do this 1. constructor fun with prototypes or 2. es6 classes
-//constructor function - always start with capital letter
-function Person(firstname, lastname, dob){
-  this.firstname = firstname;
-  this.lastname = lastname;
-  this.dob = new Date(dob);
-  //methods not advised to be added here buh to prototype
-  this.getFullName = function(){
+
+// //Object oriented programming
+// // two ways to do this 1. constructor fun with prototypes or 2. es6 classes
+// //constructor function - always start with capital letter
+// function Person(firstname, lastname, dob){
+//   this.firstname = firstname;
+//   this.lastname = lastname;
+//   this.dob = new Date(dob);
+//   //methods not advised to be added here buh to prototype
+//   this.getFullName = function(){
+//     return `${this.firstname} ${this.lastname}`
+//   }
+// }
+
+// //adding methods to prototype(best way)
+// Person.prototype.getBirthYear = function(){
+//   return this.dob.getFullYear()
+// }
+
+// //instantiate object
+// const person1 = new Person('John', 'Doe', '4-3-1999')
+// const person2 = new Person('Mary', 'jOHN', '4-3-1999')
+// console.log(person1);
+// console.log(person2.dob);
+// console.log(person1.getBirthYear())
+// console.log(person2.getFullName())
+
+// class also dose the same and constructor function just that is the pertty way to wrirte it(sytatic suger)
+
+class Person {
+  constructor(firstname, lastname, dob){
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.dob = new Date(dob);
+  }
+  //methods are here
+  getFullName(){
     return `${this.firstname} ${this.lastname}`
   }
+  getBirthYear = function(){
+    return this.dob.getFullYear()
+  }
 }
-
-//adding methods to prototype(best way)
-Person.prototype.getBirthYear = function(){
-  return this.dob.getFullYear()
-}
-
 //instantiate object
 const person1 = new Person('John', 'Doe', '4-3-1999')
 const person2 = new Person('Mary', 'jOHN', '4-3-1999')
