@@ -229,20 +229,32 @@
 //   console.log(`x is more than 5 or y more than 10`);
 // }
 
-//tonori operator like short hand if statment
-const x = 10;
+// //tonori operator like short hand if statment
+// const x = 10;
 
-const color = x > 10 ? 'red' : 'blue';
-console.log(color);
+// const color = x > 10 ? 'red' : 'blue';
+// console.log(color);
 
-//switch statment
-switch(color){
-  case 'red':
-    console.log(`color is red`);
-    break;
-  case 'blue':
-    console.log('color is blue');
-    break
-  default:
-    console.log(`THERE IS NO COLOR`);
+// //switch statment
+// switch(color){
+//   case 'red':
+//     console.log(`color is red`);
+//     break;
+//   case 'blue':
+//     console.log('color is blue');
+//     break
+//   default:
+//     console.log(`THERE IS NO COLOR`);
+// }
+
+
+//FUNCTIONS
+function addNum(num1 = 1, num2 = 1){
+  return(num1 + num2);
 }
+console.log(addNum(5,4));
+//arrow function
+const AddNum = (num1, num2) => {
+  return(num1 + num2)
+}
+console.log(AddNum(5,5));
