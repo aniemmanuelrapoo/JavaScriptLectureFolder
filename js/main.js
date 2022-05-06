@@ -155,7 +155,11 @@ while(i < 10){
   i++;
 };
 
-//Looping through and array
+//Looping through an array
 for(let i = 0; i < todos.length; i++){
-  console.log(`for loop number: ${i}`);
+  console.log(todos[i].text);
+}
+// another way is for of loop
+for(let todo of todos){
+  console.log(todo.text)
 }
