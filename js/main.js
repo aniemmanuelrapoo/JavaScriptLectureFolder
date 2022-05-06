@@ -67,7 +67,61 @@
 // console.log(fruites.indexOf('oranges'));
 // console.log(fruites);
 
-//Object Literals - key value pairs
+// //Object Literals - key value pairs
+// const person = {
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   age: 30,
+//   hobbies: ['music', 'movies', 'sports'],
+//   address: {
+//     street: '50 Main str',
+//     city: 'Jalingo',
+//     state: 'Taraba'
+//   }
+// }
+
+// console.log(person);
+// //to access a single object we use the dot syntax
+// console.log(person.firstName, person.lastName);
+// console.log(person.hobbies[1]);
+// console.log(person.address.city);
+
+// //destructuring.. pulling out from object to use as variables
+// const { firstName, lastName, address: {city} } = person
+// console.log(firstName, city);
+
+// //you can also add peroperties to your object
+// person.email = 'rapoo@gmail.com';
+// console.log(person);
+
+// //array of objects
+// const todos = [
+//   {
+//     id: 1,
+//     text: "Take out trash",
+//     isCompleted: true
+//   },
+//   {
+//     id: 2,
+//     text: "How is your day",
+//     isCompleted: false
+//   },
+//   {
+//     id: 3,
+//     text: "Good bye for now",
+//     isCompleted: true
+//   }
+// ]
+// console.log(todos);
+// //getting the text in the array of object
+// console.log(todos[1].text);
+// //Json is a data format and used for full stack dev for api and sending data to a server. useally sent and recived in json
+
+// //converting object to json format
+// const todoJson = JSON.stringify(todos)
+// console.log(todoJson);
+
+// Loops
 const person = {
   firstName: 'John',
   lastName: 'Doe',
@@ -79,44 +133,18 @@ const person = {
     state: 'Taraba'
   }
 }
+//for loops
+//first param is the assignment of the variables,, next is the condtion that needs to be met,, last is the increment adds 1 to i variable
+//what ever we put inside will run until the condition is true
+for(let i = 0; i <= 10; i++){
+  console.log(`for loop number: ${i}`);
+}
 
-console.log(person);
-//to access a single object we use the dot syntax
-console.log(person.firstName, person.lastName);
-console.log(person.hobbies[1]);
-console.log(person.address.city);
-
-//destructuring.. pulling out from object to use as variables
-const { firstName, lastName, address: {city} } = person
-console.log(firstName, city);
-
-//you can also add peroperties to your object
-person.email = 'rapoo@gmail.com';
-console.log(person);
-
-//array of objects
-const todos = [
-  {
-    id: 1,
-    text: "Take out trash",
-    isCompleted: true
-  },
-  {
-    id: 2,
-    text: "How is your day",
-    isCompleted: false
-  },
-  {
-    id: 3,
-    text: "Good bye for now",
-    isCompleted: true
-  }
-]
-console.log(todos);
-//getting the text in the array of object
-console.log(todos[1].text);
-//Json is a data format and used for full stack dev for api and sending data to a server. useally sent and recived in json
-
-//converting object to json format
-const todoJson = JSON.stringify(todos)
-console.log(todoJson);
+//while loops
+//old school and the diff is that we set the variables outside the loop
+// always increment the i if not the loop will be a never ending loop becus the condition will not be met
+let i = 0;
+while(i < 10){
+  console.log(`while loop number: ${i}`)
+  i++;
+};
