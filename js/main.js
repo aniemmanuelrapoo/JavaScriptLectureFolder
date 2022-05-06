@@ -248,13 +248,15 @@
 // }
 
 
-//FUNCTIONS
-function addNum(num1 = 1, num2 = 1){
-  return(num1 + num2);
-}
-console.log(addNum(5,4));
-//arrow function
-const AddNum = (num1, num2) => {
-  return(num1 + num2)
-}
-console.log(AddNum(5,5));
+// //FUNCTIONS
+// function addNum(num1 = 1, num2 = 1){
+//   return(num1 + num2);
+// }
+// console.log(addNum(5,4));
+// //arrow function
+// const AddNum = (num1, num2) => {
+//   return(num1 + num2)
+// }
+// console.log(AddNum(5,5));
+
+//Object oriented programming
