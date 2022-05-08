@@ -17,4 +17,5 @@
 // console.log(document.links);
 // console.log(document.images);
 
-//Selectors
+// Selectors
+//single selectors and multiple selectors
