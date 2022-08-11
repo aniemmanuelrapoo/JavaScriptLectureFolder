@@ -119,3 +119,45 @@ document.write("!(a && b) => ")
 result = (!(a && b))
 document.write(result)
 document.write(linebreak)
+
+
+//Assignment Operators
+var a = 20;
+var b = 10;
+var linebreak = "<br />";
+
+// simple assignment
+document.write("Value of a => (a = b) => ");
+result = (a = b);
+document.write(result);
+document.write(linebreak);
+
+//add assignment
+document.write("Value of a => (a += b) => ");
+result = (a += b);
+document.write(result);
+document.write(linebreak);
+
+//subtract assignment
+document.write("Value of a => (a -= b) => ");
+result = (a -= b);
+document.write(result);
+document.write(linebreak);
+
+// multiply assignment
+document.write("Value of a => (a *= b) => ");
+result = (a *= b);
+document.write(result);
+document.write(linebreak);
+
+//divide assignment
+document.write("Value of a => (a /= b) => ");
+result = (a /= b);
+document.write(result);
+document.write(linebreak);
+
+//modules assignment
+document.write("Value of a => (a %= b) => ");
+result = (a %= b);
+document.write(result);
+document.write(linebreak)
