@@ -41,16 +41,29 @@
 // }
 // document.write ("Exiting from the loop!");
 
-//LOOP CONTROL
-//The break Statement
-var x = 0;
+// //LOOP CONTROL
+// //The break Statement
+// var x = 0;
+// document.write("Entering the loop<br /> ");
+// while (x < 20)
+// {
+//  if (x == 5){ 
+//  break; // breaks out of loop completely
+//  }
+//  x++;
+//  document.write( x + "<br />");
+// }
+// document.write("Exiting the loop!<br /> ");
+
+//The continue Statement
+var x = 1;
 document.write("Entering the loop<br /> ");
-while (x < 20)
+while (x < 10)
 {
- if (x == 5){ 
- break; // breaks out of loop completely
- }
  x++;
+ if (x == 5){
+ continue; // skip
+ }
  document.write( x + "<br />");
 }
 document.write("Exiting the loop!<br /> ");
