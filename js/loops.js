@@ -55,15 +55,32 @@
 // }
 // document.write("Exiting the loop!<br /> ");
 
-//The continue Statement
-var x = 1;
-document.write("Entering the loop<br /> ");
-while (x < 10)
+// //The continue Statement
+// var x = 1;
+// document.write("Entering the loop<br /> ");
+// while (x < 10)
+// {
+//  x++;
+//  if (x == 5){
+//  continue; // skip
+//  }
+//  document.write( x + "<br />");
+// }
+// document.write("Exiting the loop!<br /> ");
+
+//Using Labels to Control the Flow
+document.write("Entering the loop!<br /> ");
+outerloop: // This is the label name
+for (var i = 0; i < 10; i++)
 {
- x++;
- if (x == 5){
- continue; // skip
+ document.write("Outerloop: " + i + "<br />");
+ innerloop:
+ for (var j = 0; j < 5; j++)
+ {
+  if (j > 3 ) break ; // Quit the innermost loop
+  if (i == 2) break innerloop; // Do the same thing
+  if (i == 4) break outerloop; // Quit the outer loop
+  document.write("Innerloop: " + j + " <br />");
+  }
  }
- document.write( x + "<br />");
-}
-document.write("Exiting the loop!<br /> ");
+ document.write("Exiting the loop!<br /> ");
