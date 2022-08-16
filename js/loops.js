@@ -24,19 +24,33 @@
 // }
 // document.write("Loop stopped!");
 
-//FOR-IN LOOP 
-var work = {
-  fist: "thsghas",
-  fist1: "thsghas",
-  fist2: "thsghas",
-  fist3: "thsghas",
-  fist4: "thsghas",
-}
-var aProperty;
-document.write("Navigator Object Properties<br /> ");
-for (aProperty in work)
+// //FOR-IN LOOP 
+// var work = {
+//   fist: "thsghas",
+//   fist1: "thsghas",
+//   fist2: "thsghas",
+//   fist3: "thsghas",
+//   fist4: "thsghas",
+// }
+// var aProperty;
+// document.write("Navigator Object Properties<br /> ");
+// for (aProperty in work)
+// {
+//  document.write(aProperty);
+//  document.write("<br />");
+// }
+// document.write ("Exiting from the loop!");
+
+//LOOP CONTROL
+//The break Statement
+var x = 0;
+document.write("Entering the loop<br /> ");
+while (x < 20)
 {
- document.write(aProperty);
- document.write("<br />");
+ if (x == 5){ 
+ break; // breaks out of loop completely
+ }
+ x++;
+ document.write( x + "<br />");
 }
-document.write ("Exiting from the loop!");
+document.write("Exiting the loop!<br /> ");
