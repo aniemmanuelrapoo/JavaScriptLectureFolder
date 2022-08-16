@@ -68,19 +68,35 @@
 // }
 // document.write("Exiting the loop!<br /> ");
 
-//Using Labels to Control the Flow
+// //Using Labels to Control the Flow
+// document.write("Entering the loop!<br /> ");
+// outerloop: // This is the label name
+// for (var i = 0; i < 10; i++)
+// {
+//  document.write("Outerloop: " + i + "<br />");
+//  innerloop:
+//  for (var j = 0; j < 5; j++)
+//  {
+//   if (j > 3 ) break ; // Quit the innermost loop
+//   if (i == 2) break innerloop; // Do the same thing
+//   if (i == 4) break outerloop; // Quit the outer loop
+//   document.write("Innerloop: " + j + " <br />");
+//   }
+//  }
+//  document.write("Exiting the loop!<br /> ");
+
+//Using Labels to Control the Flow continue
 document.write("Entering the loop!<br /> ");
 outerloop: // This is the label name
-for (var i = 0; i < 10; i++)
+for (var i = 0; i < 3; i++)
 {
  document.write("Outerloop: " + i + "<br />");
- innerloop:
  for (var j = 0; j < 5; j++)
  {
-  if (j > 3 ) break ; // Quit the innermost loop
-  if (i == 2) break innerloop; // Do the same thing
-  if (i == 4) break outerloop; // Quit the outer loop
-  document.write("Innerloop: " + j + " <br />");
+  if (j == 3){
+  continue outerloop;
   }
- }
- document.write("Exiting the loop!<br /> ");
+  document.write("Innerloop: " + j + "<br />");
+ } 
+}
+document.write("Exiting the loop!<br /> ");
