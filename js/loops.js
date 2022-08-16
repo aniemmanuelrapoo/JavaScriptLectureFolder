@@ -17,9 +17,26 @@
 // document.write ("Loop stopped!");
 
 //The for Loop
-var count;
-document.write("Starting Loop<br />");
-for(count = 0; count < 10; count++){
- document.write("Current Count : " + count + "<br />" );
+// var count;
+// document.write("Starting Loop<br />");
+// for(count = 0; count < 10; count++){
+//  document.write("Current Count : " + count + "<br />" );
+// }
+// document.write("Loop stopped!");
+
+//FOR-IN LOOP 
+var work = {
+  fist: "thsghas",
+  fist1: "thsghas",
+  fist2: "thsghas",
+  fist3: "thsghas",
+  fist4: "thsghas",
 }
-document.write("Loop stopped!");
+var aProperty;
+document.write("Navigator Object Properties<br /> ");
+for (aProperty in work)
+{
+ document.write(aProperty);
+ document.write("<br />");
+}
+document.write ("Exiting from the loop!");
