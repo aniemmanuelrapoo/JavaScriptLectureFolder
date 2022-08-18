@@ -41,8 +41,16 @@
 //   document.write ( result );
 // }
 
-//Function () Constructor => pass the secoundFunction to the html button
-var func = new Function("x", "y", "return x*y;");
+// //Function () Constructor => pass the secoundFunction to the html button
+// var func = new Function("x", "y", "return x*y;");
+// function secondFunction(){
+//  var result;
+//  result = func(10,20);
+//  document.write ( result );
+// }
+
+//Function Literals => pass the secoundFunction to the html button
+var func = function(x,y){ return x*y };
 function secondFunction(){
  var result;
  result = func(10,20);
