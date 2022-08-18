@@ -29,14 +29,22 @@
 //   document.write (result );
 // }
 
-//Nested Functions => pass the secoundFunction to the html button
-function hypotenuse(a, b) {
-  function square(x) { return x*x; }
+// //Nested Functions => pass the secoundFunction to the html button
+// function hypotenuse(a, b) {
+//   function square(x) { return x*x; }
   
-  return Math.sqrt(square(a) + square(b));
-}
+//   return Math.sqrt(square(a) + square(b));
+// }
+// function secondFunction(){
+//   var result;
+//   result = hypotenuse(2,2);
+//   document.write ( result );
+// }
+
+//Function () Constructor => pass the secoundFunction to the html button
+var func = new Function("x", "y", "return x*y;");
 function secondFunction(){
-  var result;
-  result = hypotenuse(2,2);
-  document.write ( result );
+ var result;
+ result = func(10,20);
+ document.write ( result );
 }
